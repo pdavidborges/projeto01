@@ -1,0 +1,104 @@
+/*
+seletor{
+    propriedade:valor;
+}
+*/
+body{
+    background-color: #222831;
+    font-family: 'Roboto', sans-serif; 
+}
+
+div{
+    background-color: #EEEEEE; /*cor de fundo*/
+    width: 400px; /*largura*/
+    text-align: center;    
+    padding: 30px; /*espaçamento interno*/
+    box-sizing: border-box; /*faz com que o padding não interfira na largura/altura*/
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+
+    border-radius: 10px;
+}
+
+img{
+    margin-bottom: 30px;
+    border-width: 5px;
+    border-color: #222831;
+    border-style: solid;
+    border-radius: 50%; /*arredondamento*/
+}
+
+h1{
+    color: #393E46;
+    font-size: 32px;        
+    margin: 0;
+}
+
+h2{
+    color: #222831;
+    font-size: 20px;
+    margin: 0;
+}
+
+p{
+    color: #666666;
+    font-size: 16px; /*valor inicial*/
+}
+
+ul{
+    margin: 0 0 30px 0; /*top right bottom left*/
+    padding: 0;
+    list-style-type: none;
+}
+
+li{    
+    margin-bottom: 5px;    
+}
+
+/*formatando todos os link que estão dentro de um <li>*/
+li a{
+    background-color: #393E46;
+    color: #FFFFFF;
+    display: block; /*link passa a se comportar como um bloco*/
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+/*ao passar o mouse no seletor*/
+li a:hover{
+    background-color: #000000;    
+}
+
+#desenvolvido{
+    color: #222831;
+}
+
+#desenvolvido:hover{
+    font-style: italic;
+}
+
+/*Media Query*/
+/*Se o tamanho da tela for de até 540px*/
+@media (max-width: 540px){
+
+    div{
+        width: 300px;
+        padding: 15px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+}
+
+@media (min-width: 1200px){
+    div{
+        width: 500px;
+    }
+}
